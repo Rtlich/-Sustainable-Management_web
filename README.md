@@ -1,94 +1,112 @@
-# Sustainable Management Predictions
-
-A web application featuring two machine learning models for predicting water consumption and notification priorities.
-
-## Project Structure
-
-```
+🌱 Sustainable Agrifood AI System - Project Structure
+🗂️ Project Structure
 projetbi/
-├── backend/              # Flask backend
-│   ├── models/          # Trained ML models
-│   │   ├── water_consumption_model.pkl    # LightGBM model
-│   │   └── notification_model.pkl         # XGBoost model
-│   ├── app.py          # Main Flask server
-│   ├── save_model.py   # Water consumption model training (LightGBM)
-│   └── train_notification_model.py  # Notification model training (XGBoost)
-└── src/                 # Angular frontend
-```
+├── 🐋 backend/              # Flask backend
+│   ├── 🧠 models/          # Trained ML models
+│   │   ├── 💧 water_consumption_model.pkl    # LightGBM model
+│   │   └── 🔔 notification_model.pkl         # XGBoost model
+│   ├── 🚡 app.py          # Main Flask server
+│   ├── 🏋️ save_model.py   # Water consumption model training (LightGBM)
+│   └️ 🚨 train_notification_model.py  # Notification model training (XGBoost)
+└── 🖥️ src/                 # Angular frontend
+🚀 Setup Instructions
+1. 🐍 Backend Setup
 
-## Setup Instructions
+  cd backend  # 📂 Navigate to backend
 
-### 1. Backend Setup
+# 📦 Install dependencies
+pip install -r requirements.txt  
 
-First, navigate to the backend directory:
-```bash
-cd backend
-```
+# 🤖 Train ML models
+# 1. 💧 Water consumption model (LightGBM)
+python save_model.py  
 
-Install Python dependencies:
-```bash
-pip install -r requirements.txt
-```
+# 2. 🔔 Notification priority model (XGBoost)
+python train_notification_model.py  
 
-Train both machine learning models:
-```bash
-# 1. Train water consumption model (LightGBM)
-python save_model.py
+# 🚀 Start Flask server
+python app.py  
+2. 🅰️ Frontend Setup
+cd ..  # 🔙 Return to project root
 
-# 2. Train notification priority model (XGBoost)
-python train_notification_model.py
-```
+# 📦 Install dependencies
+npm install  
 
-Start the Flask server:
-```bash
-python app.py
-```
-The backend will be available at http://localhost:5000
+# 🚀 Start Angular dev server
+ng serve  
+🌐 Frontend available at http://localhost:4200
 
-### 2. Frontend Setup
+🤖 Machine Learning Models
+💧 Water Consumption Model (LightGBM)
+🔮 Predicts water usage based on:
 
-In a new terminal, navigate to the project root:
-```bash
-cd ..  # If you're in the backend directory
-```
+Initial stock 📦
 
-Install Node.js dependencies:
-```bash
-npm install
-```
+Unit price 💰
 
-Start the Angular development server:
-```bash
-ng serve
-```
-The frontend will be available at http://localhost:4200
+🏋️ Training script: save_model.py
 
-## Machine Learning Models
+🧠 Model type: LightGBM Regressor
 
-1. **Water Consumption Model (LightGBM)**
-   - Predicts water consumption based on:
-     - Initial stock
-     - Unit price
-   - Training script: `save_model.py`
-   - Model type: LightGBM Regressor
+🔔 Notification Priority Model (XGBoost)
+⚡ Classifies notification priority:
 
-2. **Notification Priority Model (XGBoost)**
-   - Predicts notification priority based on:
-     - Category
-     - Description
-   - Includes severity scoring system
-   - Training script: `train_notification_model.py`
-   - Model type: XGBoost Classifier
+Category 🏷️
 
-## Development
+Description 📝
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.9.
+Severity scoring ⚠️
 
-### Angular Development Commands
+🏋️ Training script: train_notification_model.py
 
-- **Development server**: `ng serve`
-- **Build**: `ng build`
-- **Unit tests**: `ng test`
-- **End-to-end tests**: `ng e2e`
+🧠 Model type: XGBoost Classifier
 
-For more information on using the Angular CLI, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+🛠️ Development
+🔧 Generated with Angular CLI v19.2.9
+
+🔥 Angular Commands
+🚀 Dev server: ng serve
+
+🏗️ Build: ng build
+
+🧪 Unit tests: ng test
+
+🔍 E2E tests: ng e2e
+
+📚 For more Angular CLI info, visit the Angular CLI Documentation
+
+🌐 Interfaces Implemented
+Login Page 🔑
+
+Secure authentication for users like "Rania"
+
+Main Dashboard 📈
+
+Revenue analytics
+
+Inventory optimization
+
+Regional distribution data
+
+Water Consumption Prediction 💧
+
+Stock and price inputs
+
+ML-powered predictions
+
+Image Classification 🌿
+
+Ecological vs pollutant detection
+
+Notification Center 🔔
+
+Priority-sorted alerts
+
+🤖 AI Features
+🧠 Machine Learning decision support
+
+🌍 Environmental impact analysis
+
+📸 Deep learning image classification
+
+📉 Predictive analytics for resource management
